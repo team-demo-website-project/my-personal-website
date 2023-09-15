@@ -1,6 +1,6 @@
 # my-personal-website
 
-reliability, curious, problem solver
+curious, problem solver, dedicated
 
 What to include in readme:
 1. Projects title
