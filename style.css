@@ -13,6 +13,7 @@ body {
 }
 h1,
 .container-fluid {
+  color: rgb(78, 78, 174);
   margin: 15px;
 }
 .firstPara {
@@ -26,11 +27,12 @@ h1,
   align-items: center;
   justify-content: center;
 }
+/* image hover effect */
 img:hover {
   position: relative;
   -webkit-transform: scale(1.5);
-  -ms-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
   transform: scale(1.5);
   z-index: 1000;
 }
@@ -41,9 +43,10 @@ img:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+/* image boarder conatiner */
 .img-container{
-max-width: 500px;
-height: 500px;
+max-width: 600px;
+height: 600px;
 border-radius: 1px;
 overflow: hidden;
 position: relative;
