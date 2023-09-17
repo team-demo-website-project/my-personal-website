@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"></script>
 </head>
+
 <body>
     <h1>Portfolio</h1>
     <nav class="stickynav">
@@ -14,9 +16,70 @@
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
     </nav>
-    works in prgress: making cat fluffiest boy.
+    <section>
+        <h2>
+            learning web development
+        </h2>
+        <img src="personalWeb.jpg" alt="personal website code" class="webCode">
+    </section>
+    <!-- carousel -->
+    <section>
+        <h2>art projects</h2>
+        <section class="slider-wrapper">
+            <ul class="slides-container" id="slides-container">
+                <li class="slide">
+                    <img src="nobrows.png" style="height: 600px;">
+                </li>
+                <li class="slide">
+                    <img src="fire.jpg" style="height: 600px;">
+                </li>
+                <li class="slide">
+                    <img src="practice.png" style="height: 600px;">
+                </li>
+                <li class="slide">
+                    <img src="Screen Shot 2020-08-16 at 12.35.32 AM.png" style="height: 600px;">
+                </li>
+                <li class="slide">
+                    <img src="flowers.jpg" style="height: 600px;">
+                </li>
+            </ul>
+            <button class="slide-arrow" id="slide-arrow-prev">
+                &#8249;
+            </button>
+            <button class="slide-arrow" id="slide-arrow-next">
+                &#8250;
+            </button>
+            <script>
+                const slidesContainer = document.getElementById("slides-container");
+                const slide = document.querySelector(".slide");
+                const prevButton = document.getElementById("slide-arrow-prev");
+                const nextButton = document.getElementById("slide-arrow-next");
+    
+                nextButton.addEventListener("click", () => {
+                    const slideWidth = slide.clientWidth;
+                    slidesContainer.scrollLeft += slideWidth;
+                });
+    
+                prevButton.addEventListener("click", () => {
+                    const slideWidth = slide.clientWidth;
+                    slidesContainer.scrollLeft -= slideWidth;
+                });
+            </script>
+    </section>
+
+    <!-- works in prgress: making cat fluffiest boy. 
     art images?
     learnings: CDL and coding.
-    Or a big carousel of images. 
+    Or a big carousel of images.
+
+    personal website
+        -picture of html and preview side by side.
+    art projects
+    -carosel
+    my cat?
+-->
+
+
 </body>
+
 </html>
