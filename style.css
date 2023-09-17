@@ -47,10 +47,10 @@ h1,
   transition: all 0.5s ease-in-out;
 }
 
-/* image boarder conatiner */
+/* index image boarder conatiner */
 .img-container {
-  max-width: calc(100vh - 2rem);
-  height: 100%;
+  max-width: 600px;
+  height: 600px;
   border-radius: 1px;
   overflow: hidden;
   position: relative;
