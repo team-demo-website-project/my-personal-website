@@ -1,24 +1,20 @@
 # my-personal-website
 
-curious, problem solver, dedicated
+curious, creative, Adaptive
 
-What to include in readme:
-1. Projects title
-2. Project Description
-    -what it does
-    -why i used what i used
-    -some challenges
-3. optional table of contents if readme is long
-4. how to install and run the project
-5. how to use the project
-6. include credits
-7. add license
-10. inlude tests (provide code examples and how to run them)
+Wanted to create a simple/minimal website with interactive features.
 
-Other stuff
-What was your motivation?
-Why did you build this project?
-What problem does it solve?
-What did you learn?
-What makes your project stand out?
-If your project has a lot of features, consider adding a "Features" section and listing them here.
+-The home page/index has a photo that zooms in and out on hover.
+    (At first I wanted to have a magnifying effect where the curser can magnify different parts of the photo when moved)
+-The about me page has a few images with circle borders and a carousel. 
+    (Unsure whether the page will look cleaner if I used a grid. Also I would like to expand this page more to had a scrool
+    feature where images appear when scrolling.)
+    (My carousel javascript did not work in the external file so I had to imbed it in the html, in general when i try more complicated javascript they tend to fail for some reason, while my alerts and console.log runs fine.)
+-Portfolio is TBD
+    (might include a sample image of the project, and have the image be the link or a button. Also with a discrition of the         project. Will most likely be a grid or table. 
+
+Blocker and Sucesses
+* I came to understand how the 'rem' measurment works while building the website.
+* I also finally found how to change the font style!
+* I am still struggling with how to effectivly use my margins/padding/etc (the concept is still iffy). Would alos like to better understand how they are effected between browsers and devices.
+* hover is my new favorite css feature
