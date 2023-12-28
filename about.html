@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <h1>About Me</h1>
+    <nav class="stickynav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <article>
+        <h2 class="me" style="font-size: xx-large;"> <strong>I am nothing if not multitalented.</strong>
+            </h1>
+            <p class="me" style="word-spacing: -4px;">but don't quote me on it</p>
+            <style>
+                .me {
+                    line-height: 0;
+                }
+            </style>
+    </article>
+    <article class="Para">
+        <p class="meTwo">
+            Wanting to try all the jobs in the world at least once, I know about a lot
+            (though I may not understand it) and I use my eclectic skills to add creativity and new ideas to my projects.
+        </p>
+        <style>
+            .Para p {
+                padding-top: 50px;
+            }
+        </style>
+    </article>
+    <!-- carousel -->
+    <article class="ParaTwo">
+        <img src="gitavatar.jpg" alt="cat" class="cat">
+        <style>
+            .cat {
+                border-radius: 10%;
+                height: 200px;
+                float: right;
+                margin-left: 2rem;
+            }
+        </style>
+        <p class="meTwo">I am an absolute sucker for my cat Bevo ( aka Beef, Beep, meep, BB, floof, etc), so much so that I wondered how I could be a veternarian or a cat cafe owner
+            for a day. <br> 
+        </p>
+    </article>
+    <article>
+        <img src="pexels-david-brown-16325212.jpg" alt="trucks" class="trucks">
+        <style>
+               .trucks{
+                height: 200px;
+                border-radius: 10%;
+                float: left;
+                margin-right: 2rem;
+            }
+        </style>
+        <p class="meTwo">
+            I am also working towards getting a CDL (commercial drivers license). This was a career path that was completely closed to me, since I never
+            thought that driving a huge truck on the highway was fun. <br> I still don't think it's any fun, but working in a warehouse along with truck drivers I
+            learned that there is more to than just driving on the highway. Not only that but knowing how to operate a big vehicle is impressive. 
+            Who knows, I could even graduate to driving a transformer or something. 
+             <br> I also dabble in the creative arts. My life long dream is to create and complete a novel or a comic, or both.
+             <center>Check out a couple of my art works below!</center>
+        </p>
+        <style>
+            .meTwo{
+                line-height: 1.5;
+            }
+        </style>
+    </article>
+
+    <article class="slider-wrapper">
+        <ul class="slides-container" id="slides-container">
+            <li class="slide">
+                <img src="nobrows.png" style="height: 600px;">
+            </li>
+            <li class="slide">
+                <img src="fire.jpg" style="height: 600px;">
+            </li>
+            <li class="slide">
+                <img src="practice.png" style="height: 600px;">
+            </li>
+            <li class="slide">
+                <img src="Screen Shot 2020-08-16 at 12.35.32 AM.png" style="height: 600px;">
+            </li>
+            <li class="slide">
+                <img src="flowers.jpg" style="height: 600px;">
+            </li>
+        </ul>
+        <button class="slide-arrow" id="slide-arrow-prev">
+            &#8249;
+        </button>
+        <button class="slide-arrow" id="slide-arrow-next">
+            &#8250;
+        </button>
+        <script>
+            const slidesContainer = document.getElementById("slides-container");
+            const slide = document.querySelector(".slide");
+            const prevButton = document.getElementById("slide-arrow-prev");
+            const nextButton = document.getElementById("slide-arrow-next");
+
+            nextButton.addEventListener("click", () => {
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft += slideWidth;
+            });
+
+            prevButton.addEventListener("click", () => {
+                const slideWidth = slide.clientWidth;
+                slidesContainer.scrollLeft -= slideWidth;
+            });
+        </script>
+    </article>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

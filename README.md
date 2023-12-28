@@ -1,3 +1,2 @@
 # my-personal-website
-
-reliability, curious, problem solver
+Part 2
